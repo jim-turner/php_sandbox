@@ -18,7 +18,7 @@ $subject_set = mysqli_query($connection, $query );
     
     //results
     while($subject = mysqli_fetch_array($subject_set)){
-        echo "<li>{$subject["menu_name"]}</li>";
+        echo "<li><a href=\"content.php\">{$subject["menu_name"]}</a></li>";
         
         $page_set = mysqli_query($connection, "SELECT * FROM pages WHERE  subject_id = {$subject["id"]} ORDER BY position ASC" );
     if (!$page_set){
@@ -28,7 +28,7 @@ $subject_set = mysqli_query($connection, $query );
     //results
     echo "<ul class=\"pages\">";    
     while($page = mysqli_fetch_array($page_set)){
-        echo "<li>{$page["menu_name"]}</li>";
+        echo "<li><a href=\"content.php\">{$page["menu_name"]}</a></li>";
     }
         echo "</ul>";
     }
