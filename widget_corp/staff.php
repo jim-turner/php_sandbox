@@ -1,23 +1,6 @@
-<html>
+<?php require_once("includes/functions.php"); ?>
+<?php include("includes/header.php"); ?>
 
-<head>
-
-    <title>Staff</title>
-    <link href="stylesheets/public.css" media="all" rel="stylesheet" type="text/css" />
-
-</head>
-
-<body>
-
-    
-
-
-
-<div id="header">
-
-    <h1>Widget Corp</h1>
-</div>
-<div id="main">
     <table id="structure">
         <tr>
             <td id="navigation">
@@ -35,8 +18,4 @@
         </tr>
     </table>
 
-</div>
-<div id="footer">I don't believe in Copyright 2017, Widget Corp</div>
-    </body>
-
-</html>
+<?php include("includes/footer.php"); ?>
